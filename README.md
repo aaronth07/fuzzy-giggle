@@ -1,4 +1,5 @@
 A collection of HeSuVi 7.1 impulse responses that i've recorded and edited.
+Note: all recorded at 48Khz. For 44.1Khz, I recommend you use the resample script in https://github.com/ThreeDeeJay/HRIR-Batch-Converters or open them in Audacity and re-save.
 
 Files:
 
