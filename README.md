@@ -6,15 +6,15 @@ Files:
 
 ## Apple Spatial
 ### Generic
-**AppleSpatial** - Apple's spatial audio __without__ personalization.  
-**AppleSpatialMovie** - Same as before, but without personalization.
+**AppleSpatial** - Apple's "Spatial Audio" renderer used by AirPods with Apple Devices. A fairly uncolored HRIR with minimal reverb, great clarity, and a high degree of openness. Rendered in Logic Pro with the 
+**AppleSpatialMovie** - The variation of Apple's renderer that is seen on Apple TV. This version includes more reverb and bass boost. Recorded in Logic Pro with the "Movie" renderer mode.
 
 ### Personalized
-**ApplePersonal** - Apple's spatial audio with my personalized profile. "Bounced" from Logic Pro.  
-**ApplePersonalMovie** - Apple's spatial audio with my personalized profile, that uses extra reverb found when watching from AppleTV.
+**ApplePersonal** - Same as above, but with AirPods connected and the personalized profile option enabled in Logic Pro.  
+**ApplePersonalMovie** -  Same as above, but with AirPods connected and the personalized profile option enabled in Logic Pro.
 
 ### Apple Speaker Spatial (Crosstalk Cancellation)
-**AppleSpatialSpeakerT** - Apple's crosstalk cancellation implementation that is found in the Mac. Trimmed excess from the end. This has one of the best directionality effect that i've found with desktop speakers, but the tonality is a bit wonky. May try to fix with EQ down the line.  
+**AppleSpatialSpeakerT** - Apple's crosstalk cancellation implementation as seen in their devices, active when you play spatial content through speakers. This is the profile for the Mac speakers. This has one of the best directionality effect that i've found when testing with desktop speakers, but the tonality is obviously tuned for a laptop. May try to fix with EQ down the line. (T -  Trimmed excess from the end)
 **AppleSpatialSpeakerTB** - Same as before, but trimmed from the beginning as well for latency purposes. This may result in slight artifacting, hence why it didn't replace the former version.
 
 ## Dolby Renderer
