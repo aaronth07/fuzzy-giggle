@@ -20,15 +20,15 @@ _Note: all recorded at 48Khz. For 44.1Khz, I recommend you use the resample scri
 _Note: Apple's profiles were directly rendered in Logic Pro from the original 7.1 impulse response testing file, negating the need for manual trimming or trimmed versions._
 
 ## Dolby Renderer
-### Generic
+### Generic  
 **AtmosRenderer-Far-Personalized** - Dolby's "Atmos Renderer" without a personalized profile applied (default generic), taken with the "far" preset. This introduces strong room acoustics and reflections, just like Apple's Movie spatial audio.  
 **AtmosRenderer-Mid-Personalized** - Dolby's "Atmos Renderer" with a personalized profile applied, taken with the "medium" preset. This is fairly light in reflections with practically no room simulation/acoustics, similar to Apple's standard spatial audio.  
-**AtmosRenderer-Near-Personalized** - Dolby's "Atmos Renderer" with a personalized profile applied, taken with the "near" preset. This has practically no reverb or room acoustics, making it a bit flat, but not as "strong" as the other presets.
+**AtmosRenderer-Near-Personalized** - Dolby's "Atmos Renderer" with a personalized profile applied, taken with the "near" preset. This has practically no reverb or room acoustics, making it a bit flat, but not as "strong" as the other presets.  
 
 ### Personalized
-**AtmosRenderer-Far-Personalized** - Dolby's "Atmos Renderer" with the "far" preset, with a personalized profile applied. Personalization was captured with the Dolby PHRTF app and uploaded to the renderer. I find that the effect of personalization is very minimal in comparison to Apple's Spatial or an actual HRTF recording.
-**AtmosRenderer-Mid-Personalized** - Same as above, but taken with the "medium" preset.
-**AtmosRenderer-Near-Personalized** - Same as above, but taken with the "near" preset.
+**AtmosRenderer-Far-Personalized** - Dolby's "Atmos Renderer" with the "far" preset, with a personalized profile applied. Personalization was captured with the Dolby PHRTF app and uploaded to the renderer. I find that the effect of personalization is very minimal in comparison to Apple's Spatial or an actual HRTF recording.  
+**AtmosRenderer-Mid-Personalized** - Same as above, but taken with the "medium" preset.  
+**AtmosRenderer-Near-Personalized** - Same as above, but taken with the "near" preset.  
 
 ### Trimmed:
 **AtmosRendererT-Far-Personalized** - Same as before, trimmed the excess of the end for CPU usage.  
@@ -44,7 +44,7 @@ _Note: The generic versions of the Dolby Profile are pretrimmed with no alternat
 # Plots
 Out of curiousity, and to attempt to match/map both an HRTF preference curve and to compensate some of the wonky tonality, I have also recorded sweeps and graphed them using REW. Sweeps were recorded at 24/48 with the edited HeSuVi BRIR applied from the left ear. I found that it was best to re-record a sweep and graph it rather than attempting to plot the binaural impulse response directly. Everything was done with REW, psychoacoustic smoothing, matched at 630Hz 2/oct. 
 
-"ApplePersonal" is the personalized profile, while "AppleSpatial" is the non-personalized
+"ApplePersonal" is the personalized profile, while "AppleSpatial" is the non-personalized.
 
 <img width="2121" height="1063" alt="AppleSpatial_cae" src="https://github.com/user-attachments/assets/2870aad2-524e-4ee5-92d6-3ba755b88e06" />
 <img width="2121" height="1063" alt="ApplePersonal_cae" src="https://github.com/user-attachments/assets/1e926ee6-642b-4573-aa4f-2d42230b46ca" />
@@ -56,3 +56,5 @@ Out of curiousity, and to attempt to match/map both an HRTF preference curve and
 <img width="2121" height="1063" alt="AtmosRendererMidPersonalized_cae" src="https://github.com/user-attachments/assets/6f252782-2157-4a14-b7b3-e2de63cd6733" />
 <img width="2121" height="1063" alt="AtmosRendererNearGeneric_cae" src="https://github.com/user-attachments/assets/af6cc746-8631-4384-89cc-468e766f5cdb" />
 <img width="2121" height="1063" alt="AtmosRendererFarPersonalized_cae" src="https://github.com/user-attachments/assets/e09d98e4-41ce-403e-ab9e-8c9f1b46d1e4" />
+
+Results are... interesting. I'm still not sure what the best way to capture digital impulse responses/sweeps are since I believe this was still subject to interference/jitter, and I didn't find the results to be very useful enough to begin compensation for some of the more extreme charactaristics of the responses (e.g. Apple Spatial Movie's bass). I may try to rerecord the sweeps with a different device, or render them in a DAW to see if I can achieve better results. 
