@@ -4,42 +4,44 @@ _Note: all recorded at 48Khz. For 44.1Khz, I recommend you use the resample scri
 
 # Impulse Responses:
 
-## Apple Spatial
-### Generic
-**AppleSpatial** - Apple's "Spatial Audio" renderer used by AirPods with Apple Devices. A fairly uncolored HRIR with minimal reverb, great clarity, and a high degree of openness. Rendered in Logic Pro with the 
-**AppleSpatialMovie** - The variation of Apple's renderer that is seen on Apple TV. This version includes more reverb and bass boost. Recorded in Logic Pro with the "Movie" renderer mode.
+## Apple Spatial  
+### Generic  
+**AppleSpatial** - Apple's "Spatial Audio" renderer used by AirPods with Apple Devices. A fairly uncolored HRIR with minimal reverb, great clarity, and a high degree of openness, but with a very close rendering distance. Rendered in Logic Pro with the "Music" renderer mode.  
+**AppleSpatialMovie** - The variation of Apple's renderer that is seen on Apple TV. This version includes more reverb and bass boost. Recorded in Logic Pro with the "Movie" renderer mode.  
 
-### Personalized
+### Personalized    
 **ApplePersonal** - Same as above, but with AirPods connected and the personalized profile option enabled in Logic Pro.  
-**ApplePersonalMovie** -  Same as above, but with AirPods connected and the personalized profile option enabled in Logic Pro.
+**ApplePersonalMovie** -  Same as above, but with AirPods connected and the personalized profile option enabled in Logic Pro.  
 
-### Apple Speaker Spatial (Crosstalk Cancellation)
-**AppleSpatialSpeakerT** - Apple's crosstalk cancellation implementation as seen in their devices, active when you play spatial content through speakers. This is the profile for the Mac speakers. This has one of the best directionality effect that i've found when testing with desktop speakers, but the tonality is obviously tuned for a laptop. May try to fix with EQ down the line. (T -  Trimmed excess from the end)
-**AppleSpatialSpeakerTB** - Same as before, but trimmed from the beginning as well for latency purposes. This may result in slight artifacting, hence why it didn't replace the former version.
+### Apple Speaker Spatial (Crosstalk Cancellation)  
+**AppleSpatialSpeakerT** - Apple's crosstalk cancellation implementation as seen in their devices, active when you play spatial content through speakers. This is the profile for the Mac speakers. This has one of the best directionality effect that i've found when testing with desktop speakers, but the tonality is obviously tuned for a laptop. May try to fix with EQ down the line. (T -  Trimmed excess from the end)  
+**AppleSpatialSpeakerTB** - Same as before, but trimmed from the beginning as well for latency purposes. This may result in slight artifacting, hence why it didn't replace the former version.  
 
 _Note: Apple's profiles were directly rendered in Logic Pro from the original 7.1 impulse response testing file, negating the need for manual trimming or trimmed versions._
 
-## Dolby Renderer
+## Dolby Renderer  
 ### Generic  
-**AtmosRenderer-Far-Personalized** - Dolby's "Atmos Renderer" without a personalized profile applied (default generic), taken with the "far" preset. This introduces strong room acoustics and reflections, just like Apple's Movie spatial audio.  
-**AtmosRenderer-Mid-Personalized** - Dolby's "Atmos Renderer" with a personalized profile applied, taken with the "medium" preset. This is fairly light in reflections with practically no room simulation/acoustics, similar to Apple's standard spatial audio.  
-**AtmosRenderer-Near-Personalized** - Dolby's "Atmos Renderer" with a personalized profile applied, taken with the "near" preset. This has practically no reverb or room acoustics, making it a bit flat, but not as "strong" as the other presets.  
+**AtmosRenderer-Far-Generic** - Dolby's "Atmos Renderer" without a personalized profile applied (default generic), taken with the "far" preset. This introduces strong room acoustics and reflections, just like Apple's Movie spatial audio.  
+**AtmosRenderer-Mid-Generic** - Dolby's "Atmos Renderer" with a personalized profile applied, taken with the "medium" preset. This is fairly light in reflections with practically no room simulation/acoustics, similar to Apple's standard spatial audio.  
+**AtmosRenderer-Near-Generic** - Dolby's "Atmos Renderer" with a personalized profile applied, taken with the "near" preset. This has practically no reverb or room acoustics, making it a bit flat, but not as "strong" as the other presets.  
+
+_Note: The generic versions of the Dolby Profile are already trimmed in both ends._
 
 ### Personalized
 **AtmosRenderer-Far-Personalized** - Dolby's "Atmos Renderer" with the "far" preset, with a personalized profile applied. Personalization was captured with the Dolby PHRTF app and uploaded to the renderer. I find that the effect of personalization is very minimal in comparison to Apple's Spatial or an actual HRTF recording.  
 **AtmosRenderer-Mid-Personalized** - Same as above, but taken with the "medium" preset.  
 **AtmosRenderer-Near-Personalized** - Same as above, but taken with the "near" preset.  
 
+_Note: Scans were done with the Dolby PHRTF	app beta testflight. A newer/white labeled version of this app can be used with the SoundID Tools app, of which I am unsure if there are any improvements to the scanning accuracy or model itself._
+
 ### Trimmed:
 **AtmosRendererT-Far-Personalized** - Same as before, trimmed the excess of the end for CPU usage.  
 AtmosRendererT-Mid-Personalized  
 AtmosRendererT-Near-Personalized  
 
-**AtmosRendererTB-Far-Personalized** - Same as before, but also trimmed off of the beginning for latency purposes.  
+**AtmosRendererTB-Far-Personalized** - Same as before, but also trimmed the beginning for latency purposes. 
 AtmosRendererTB-Mid-Personalized  
 AtmosRendererTB-Near-Personalized  
-
-_Note: The generic versions of the Dolby Profile are pretrimmed with no alternative versions._
 
 # Plots
 Out of curiousity, and to attempt to match/map both an HRTF preference curve and to compensate some of the wonky tonality, I have also recorded sweeps and graphed them using REW. Sweeps were recorded at 24/48 with the edited HeSuVi BRIR applied from the left ear. I found that it was best to re-record a sweep and graph it rather than attempting to plot the binaural impulse response directly. Everything was done with REW, psychoacoustic smoothing, matched at 630Hz 2/oct. 
