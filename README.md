@@ -57,6 +57,7 @@ Out of curiousity, and to attempt to match/map both an HRTF preference curve and
 <img width="2121" height="1063" alt="AtmosRendererMidGeneric_cae" src="https://github.com/user-attachments/assets/d342e7b5-89b0-4c80-b54a-c69771a7a73f" />
 <img width="2121" height="1063" alt="AtmosRendererMidPersonalized_cae" src="https://github.com/user-attachments/assets/6f252782-2157-4a14-b7b3-e2de63cd6733" />
 <img width="2121" height="1063" alt="AtmosRendererNearGeneric_cae" src="https://github.com/user-attachments/assets/af6cc746-8631-4384-89cc-468e766f5cdb" />
+_Possibly mislabeled_
 <img width="2121" height="1063" alt="AtmosRendererFarPersonalized_cae" src="https://github.com/user-attachments/assets/e09d98e4-41ce-403e-ab9e-8c9f1b46d1e4" />
 
 Results are... interesting. I'm still not sure what the best way to capture digital impulse responses/sweeps are since I believe this was still subject to interference/jitter, and I didn't find the results to be very useful enough to begin compensation for some of the more extreme charactaristics of the responses (e.g. Apple Spatial Movie's bass). I may try to rerecord the sweeps with a different device, or render them in a DAW to see if I can achieve better results. 
