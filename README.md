@@ -13,6 +13,12 @@ _Note: all recorded at 48Khz. For 44.1Khz, I recommend you use the resample scri
 **ApplePersonal** - Same as above, but with AirPods connected and the personalized profile option enabled in Logic Pro.  
 **ApplePersonalMovie** -  Same as above, but with AirPods connected and the personalized profile option enabled in Logic Pro.  
 
+_Edited versions:_
+**ApplePersonal+** - Same as ApplePersonal, but with the reverb and non-direct sound boosted in magnitude after about 7ms and onward. Tonality should be very similar so no graphs.  
+**ApplePersonal-DeVerb** - Exact opposite of the "+" version, with reverb after a certain point cut with smooth fade off. I can't remember specifics on time but I believe it was about 12-15ms that I started fading out, please correct me if you open the waveform.
+
+At this time I do not plan on making non-personalized edited versions, apologies. Perhaps someday if I have the free time. I will say that Apple's personalization effect is not very extreme (right in the middle), so even the personlized versions should still be usable for the vast majority 
+
 ### Apple Speaker Spatial (Crosstalk Cancellation)  
 **AppleSpatialSpeakerT** - Apple's crosstalk cancellation implementation as seen in their devices, active when you play spatial content through speakers. This is the profile for the Mac speakers. This has one of the best directionality effect that i've found when testing with desktop speakers, but the tonality is obviously tuned for a laptop. May try to fix with EQ down the line. (T -  Trimmed excess from the end)  
 **AppleSpatialSpeakerTB** - Same as before, but trimmed from the beginning as well for latency purposes. This may result in slight artifacting, hence why it didn't replace the former version.  
