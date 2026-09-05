@@ -33,6 +33,8 @@ _Note: Apple's profiles were directly rendered in Logic Pro from the original 7.
 
 _Note: The generic versions of the Dolby Profile are already trimmed in both ends._
 
+**AtmosRendererFar-EQComp-V1.txt** - Rough EQ to correct the Atmos Far Renderer's odd tonality, for the purpose of getting the wider/expanded space, room reflections, and reverb without the wonky tonality changes/speaker emulation. V1 to specify that it is rough and not perfect. Works with both generic and personalized.
+
 ### Personalized
 **AtmosRenderer-Far-Personalized** - Dolby's "Atmos Renderer" with the "far" preset, with a personalized profile applied. Personalization was captured with the Dolby PHRTF app and uploaded to the renderer. I find that the effect of personalization is very minimal in comparison to Apple's Spatial or an actual HRTF recording.  
 **AtmosRenderer-Mid-Personalized** - Same as above, but taken with the "medium" preset.  
